@@ -2,25 +2,46 @@
 <html>
     <head>
         <title>Brandon Stahl | Portfolio</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap">
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <header>
-            <h1>Brandon Stahl</h1>
+            <span>
+                <a>BS</a>
+            </span>
+            <nav class="menu">
+                <a class="menu-item" href="#">Skills</a>
+                <a class="menu-item" href="#">Bio</a>
+                <a class="menu-item" href="#">Certs</a>
+                <a class="menu-item" href="#">Demos</a>
+                <a class="menu-item" href="#">Projects</a>
+                <a class="menu-item" href="#">Hobbies</a>
+            </nav>
         </header>
         <main>
-            <section>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5szgpyNt9ulMew8lfNQ4GIxu2GcYqxTyiCg&s" 
+            <div class="hero">
+                <img class="profile-pic" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5szgpyNt9ulMew8lfNQ4GIxu2GcYqxTyiCg&s" 
                     alt="Brandon Stahl" 
                     width="300" 
                     height="200">
-            </section>
+                <div class="hero-text">
+                    <h1>Brandon Stahl</h1>
+                    <p class="subtitle">Software Engineer......................</p>
+                    <div class="social-links">
+                        <a class="social-link" href="#">GitHub</a>
+                        <a class="social-link" href="#">LinkedIn</a>
+                        <a class="social-link" href="#">Email</a>
+                    </div>
+                </div>
+            </div>
             <section>
                 <h2>Skills</h2>
-                <ul>
-                    <li><a href="#">Skill One</a></li>
-                    <li><a href="#">Skill Two</a></li>
-                    <li><a href="#">Skill Three</a></li>
-                </ul>
+                <div class="skill-tags">
+                    <span class="tag">Skill One</span>
+                    <span class="tag">Skill Two</span>
+                    <span class="tag">Skill Three</span>
+                </div>
             </section>
             <section>
                 <h2>Bio</h2>
@@ -32,37 +53,40 @@
                     mollit anim id est laborum.
                 </p>
             </section>
-            <section>
+            <section class="content-section">
                 <h2>Certifications</h2>
-                <ul>
-                    <li><a href="#">Cert One</a></li>
-                    <li><a href="#">Cert Two</a></li>
-                    <li><a href="#">Cert Three</a></li>
-                </ul>
+                <div>
+                    <span><a href="#">Cert One</a></span>
+                    <span><a href="#">Cert Two</a></span>
+                    <span><a href="#">Cert Three</a></span>
+                </div>
             </section>
-            <section>
+            <section class="content-section">
                 <h2>Demos</h2>
                     <ul>
                         <li><a href="#">Demo One</a></li>
                         <li><a href="#">Demo Two</a></li>
                         <li><a href="#">Demo Three</a></li>
                     </ul>
+                    <button class="show-more">Show more</button>
             </section>
-            <section>
+            <section class="content-section">
                 <h2>Passion Projects</h2>
                     <ul>
                         <li><a href="#">Project One</a></li>
                         <li><a href="#">Project Two</a></li>
                         <li><a href="#">Project Three</a></li>
                     </ul>
+                    <button class="show-more">Show more</button>
             </section>
-            <section>
+            <section class="content-section">
                 <h2>Hobbies</h2>
                     <ul>
                         <li><a href="#">Hobby One</a></li>
                         <li><a href="#">Hobby Two</a></li>
                         <li><a href="#">Hobby Three</a></li>
                     </ul>
+                    <button class="show-more">Show more</button>
             </section>
         </main>
     </body>
