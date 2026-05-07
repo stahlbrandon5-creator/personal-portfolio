@@ -79,6 +79,7 @@ h2 {
 }
 
 .skill-tags {
+    display: flex;
     flex-wrap: wrap;
     gap: 5px;
 }
