@@ -120,7 +120,6 @@ li a {
 .tag-sql {
     background-color: #f5e6da;
     color: #7a3f22;
-  
 }
 
 .tag-html {
@@ -133,4 +132,19 @@ li a {
     border: none;
     color: #8a8778;
     cursor: pointer;
+}
+
+.cert-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.cert-tags a {
+    text-decoration: none;
+}
+
+.tag-cert {
+    border: 1px solid #e0ddd5;
+    color: #6b5a2e;
 }
