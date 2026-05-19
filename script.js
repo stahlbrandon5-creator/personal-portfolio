@@ -1,4 +1,5 @@
 const buttons = document.querySelectorAll('.show-more');
+const nav_links = document.querySelectorAll('content-list');
 
 buttons.forEach(function(button) {
     button.addEventListener('click', () => {
@@ -13,5 +14,12 @@ buttons.forEach(function(button) {
         });
 
         button.textContent = isToggled ? 'Show more ▼' : 'Show less ▲' ;
+    });
+});
+
+nav_links.forEach(function(link) {
+    link.addEventListener('click', (event) => {
+        link.scrollIntoView({behavior: "smooth"});
+        event.preventDefault();
     });
 });
