@@ -1,4 +1,5 @@
 const buttons = document.querySelectorAll('.show-more');
+const menuItems = document.querySelectorAll('.menu-item');
 
 buttons.forEach(function(button) {
     button.addEventListener('click', () => {
@@ -13,5 +14,13 @@ buttons.forEach(function(button) {
         });
 
         button.textContent = isToggled ? 'Show more ▼' : 'Show less ▲' ;
+    });
+});
+
+menuItems.forEach(function(menuItem) {
+    menuItem.addEventListener('click', () => {
+        const id = menuItem.getAttribute("href");
+        const element = document.querySelector(id);
+        element.scrollIntoView({ behavior: "smooth", block: "center"});
     });
 });
