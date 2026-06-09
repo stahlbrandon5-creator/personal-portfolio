@@ -2,7 +2,8 @@ const buttons = document.querySelectorAll('.show-more');
 const menuItems = document.querySelectorAll('.menu-item');
 
 buttons.forEach(function(button) {
-    button.addEventListener('click', () => {
+    button.addEventListener('click', (e) => {
+        e.preventDefault();
         const contentList  = button.closest('.content-list');
         const toggleItems = contentList.querySelectorAll(".toggle");
         
@@ -18,7 +19,8 @@ buttons.forEach(function(button) {
 });
 
 menuItems.forEach(function(menuItem) {
-    menuItem.addEventListener('click', () => {
+    menuItem.addEventListener('click', (e) => {
+        e.preventDefault();
         const id = menuItem.getAttribute("href");
         const element = document.querySelector(id);
         element.scrollIntoView({ behavior: "smooth", block: "center"});

@@ -66,6 +66,15 @@ li a {
 .menu-item {
     color: #5f7161;
     text-decoration: none;
+    padding: 4px 8px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.menu-item:hover {
+    color: #faf9f6;
+    background-color: #5f7161;
 }
 
 .hero {
