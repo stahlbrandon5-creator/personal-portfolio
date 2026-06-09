@@ -96,7 +96,7 @@ li a {
     justify-content: center;
     font-size: 60px;
     font-weight: bold;
-    color: white;
+    color: #e0ddd5;
     background-color: rgba(0, 0, 0, 0.15);
     background-image: url('your-photo.jpg');
     background-size: cover;
@@ -155,6 +155,29 @@ li a {
 .tag-html {
     background-color: #f0e9d8;
     color: #6b5a2e;
+}
+
+.tag-vibecode {
+    background-color: #D97757;
+    color: #ffffff;
+    transition: all 0.2s ease;
+}
+
+.tag-vibecode:hover{
+    background-color: linear-gradient(135deg, #D97757, #c4623e);
+    transition: all 0.2s ease;
+}
+
+.tag-vibecode:hover::after {
+    content: "\1F919";
+    transform: rotate(45deg);
+}
+
+@keyframes vibeCode {
+    0% {}
+    25% {}
+    50% {}
+    100% {}
 }
 
 .show-more {
