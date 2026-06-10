@@ -158,9 +158,15 @@ li a {
 }
 
 .tag-vibecode {
-    background-color: #D97757;
+    background-color: #8a8778;
     color: #ffffff;
     transition: all 0.2s ease;
+}
+
+.cdn-icon-claude {
+    width: "12";
+    height: "12";
+    filter: invert(74%) sepia(13%) saturate(1061%) max(0) hue-rotate(338deg) brightness(89%) contrast(84%);
 }
 
 .tag-vibecode:hover{
