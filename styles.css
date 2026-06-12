@@ -163,20 +163,20 @@ li a {
     transition: all 0.2s ease;
 }
 
-.cdn-icon-claude {
-    width: "12";
-    height: "12";
-    filter: invert(74%) sepia(13%) saturate(1061%) max(0) hue-rotate(338deg) brightness(89%) contrast(84%);
+.tag-vibecode svg {
+    fill: #D97757;
+    height: 16px;
+    width: 16px;
+    vertical-align: middle;
 }
 
 .tag-vibecode:hover{
-    background-color: linear-gradient(135deg, #D97757, #c4623e);
+    background: linear-gradient(135deg, #D97757, #c4623e);
     transition: all 0.2s ease;
 }
 
 .tag-vibecode:hover::after {
     content: "\1F919";
-    transform: rotate(45deg);
 }
 
 @keyframes vibeCode {
